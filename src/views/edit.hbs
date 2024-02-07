@@ -1,0 +1,28 @@
+<div class="card card-body bg-dark text-white p-4">
+    <h3>Update a task</h3>
+    <form action="/tasks/{{task._id}}/edit" method="POST">
+        <div class="form-group mt-2">
+            <label for="modulo" class="text-white">Módulo:</label>
+            <input type="text" name="modulo" id="modulo" placeholder="Módulo" value="{{task.modulo}}"
+                class="form-control bg-primary text-white">
+        </div>
+        <div class="form-group mt-2">
+            <label for="metodo" class="text-white">Método:</label>
+            <input type="text" name="metodo" id="metodo" placeholder="Método" value="{{task.metodo}}"
+                class="form-control bg-primary text-white">
+        </div>
+        <div class="form-group mt-2">
+            <label for="descripcion" class="text-white">Descripción:</label>
+            <textarea name="descripcion" id="descripcion" placeholder="Descripción" rows="3"
+                class="form-control bg-primary text-white">{{task.descripcion}}</textarea>
+        </div>
+        <div class="form-group mt-2">
+            <label for="ejemplo" class="text-white">Ejemplo:</label>
+            <textarea name="ejemplo" id="ejemplo" placeholder="Ejemplo" rows="7" class="form-control bg-primary text-white">{{task.ejemplo}}</textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-sm mt-2">Update</button>
+            <a href="/tasks/{{task._id}}/delete" class="btn btn-danger btn-sm mt-2">Delete</a>
+        </div>
+    </form>
+</div>

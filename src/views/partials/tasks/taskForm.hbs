@@ -1,0 +1,23 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+    <h3>Add task</h3>
+    <form action="/tasks/add" method="POST">
+    <div class="form-group">
+        <label for="modulo">Módulo:</label>
+        <input type="text" name="modulo" id="modulo" placeholder="Módulo" class="form-control bg-secondary text-white">
+    </div>
+    <div class="form-group">
+        <label for="metodo">Método:</label>
+        <input type="text" name="metodo" id="metodo" placeholder="Método" class="form-control bg-secondary text-white">
+    </div>  
+    <div class="form-group"> 
+        <label for="descripcion">Descripción:</label>
+        <textarea name="descripcion" id="descripcion" placeholder="Descripción" class="form-control bg-secondary text-white"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="ejemplo">Ejemplo:</label>
+        <textarea name="ejemplo" id="ejemplo" placeholder="Ejemplo" class="form-control bg-secondary text-white"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary btn-sm mt-2">Add</button>
+</form>
+
+</div>
